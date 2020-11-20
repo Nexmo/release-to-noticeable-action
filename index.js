@@ -1,6 +1,11 @@
-const { Toolkit } = require('actions-toolkit')
+const { Toolkit } = require("actions-toolkit");
 
 // Run your GitHub Action!
-Toolkit.run(async tools => {
-  tools.exit.success('We did it!')
-})
+Toolkit.run(
+  async (tools) => {
+    return tools.exit.success("We did it!");
+  },
+  {
+    event: "release",
+  }
+);
