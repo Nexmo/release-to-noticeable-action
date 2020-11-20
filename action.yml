@@ -1,8 +1,8 @@
 name: GitHub Release to Noticeable
 description: Send GitHub Releases to Noticeable
 runs:
-  using: docker
-  image: Dockerfile
+  using: node12
+  main: dist/index.js
 branding:
   icon: mail
   color: white
