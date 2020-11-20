@@ -6,3 +6,14 @@ runs:
 branding:
   icon: mail
   color: white
+inputs:
+  tags:
+    description: Comma separated list of tags to add for any releases in this repo
+    default: ""
+  release_prefix:
+    description: Add a prefix to any releases. Useful when the release name is v1.2.3 and you want to add the repo name too
+    default: ""
+  disable_repo_link:
+    description: Set to true to hide the repo URL in the changelog entry. Useful when repos are private
+  draft:
+    description: Add the changelog entry as a draft

@@ -11,11 +11,11 @@ on:
     types: [published]
 jobs:
   changelog:
-    name: node12
+    name: Changelog
     runs-on: ubuntu-latest
     steps:
-      - name: Debug
-        uses: nexmo/release-to-noticeable-action@main
+      - name: Send to Noticeable
+        uses: nexmo/release-to-noticeable-action@v1
         env:
           NOTICEABLE_API_KEY: ""
           NOTICEABLE_PROJECT_ID: ""
