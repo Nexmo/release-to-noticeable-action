@@ -103,9 +103,9 @@ describe("GitHub Release to Noticeable", () => {
     },
 
     {
-      name: "adds a title prefix if the RELEASE_TITLE input is provided",
+      name: "adds a title prefix if the RELEASE_PREFIX input is provided",
       env: {
-        INPUT_RELEASE_TITLE: "demo-project",
+        INPUT_RELEASE_PREFIX: "demo-project",
       },
       variables: {
         title: "demo-project v1.2.3",

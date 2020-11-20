@@ -34,8 +34,8 @@ Toolkit.run(
 
     // Use the title from the release, plus anything set in the environment
     let title = release.name;
-    if (tools.inputs.release_title) {
-      title = tools.inputs.release_title + " " + title;
+    if (tools.inputs.release_prefix) {
+      title = tools.inputs.release_prefix + " " + title;
     }
 
     // Then the content
