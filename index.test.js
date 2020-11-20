@@ -10,6 +10,7 @@ const defaultRelease = {
     name: "v1.2.3",
     body: "This is an example release body",
     html_url: "https://github.com/nexmo/fake-test-repo/releases/v1.2.3",
+    published_at: "2019-05-15T15:20:53Z",
   },
   repository: {
     name: "fake-test-repo",
@@ -221,7 +222,7 @@ function mockCreatePost(variables) {
         content:
           "This is an example release body\n\nhttps://github.com/nexmo/fake-test-repo/releases/v1.2.3",
         draft: false,
-        created: "2020-11-25T23:45:35.116Z",
+        created: "2019-05-15T15:20:53.000Z",
         labels: [],
         ...variables,
       },

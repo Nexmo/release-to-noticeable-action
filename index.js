@@ -67,7 +67,7 @@ Toolkit.run(
       title,
       content,
       draft,
-      created: new Date("2020-11-25T23:45:35.116Z").toISOString(),
+      created: new Date(release.published_at).toISOString(),
       labels,
     });
 
